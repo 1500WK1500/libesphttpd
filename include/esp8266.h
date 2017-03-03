@@ -18,7 +18,7 @@
 #endif
 
 #else
-#include <c_types.h>
+#include <c_types.h.orig> //The orig file is needed because the esp-open-sdk patched c_types.h to be C99 compatible but some functions in ets_sys.h use non C99 compatible types
 #include <ip_addr.h>
 #include <espconn.h>
 #include <ets_sys.h>
